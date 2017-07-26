@@ -1,0 +1,13 @@
+<h3>Search Weather:</h3>
+
+<!-- SEARCH SUBREDDIT INPUT -->
+<form ng-submit="searchWeather(userLat, userLong)">
+  <div class="input-group">
+    <span class="input-group-addon">
+      <i class="glyphicon glyphicon-search"></i>
+    </span>
+  <input type="text" class="form-control" ng-model="userLat" placeholder="Search a latitude..."/>
+  <input type="text" class="form-control" ng-model="userLong" placeholder="Search a longitude..."/>
+  </div>
+</form>
+<button type="button" ng-click="searchWeather(userLat, userLong)">Submit</button>

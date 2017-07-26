@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="weatherApp" lang=en>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://www.fontify.me/wf/363111abbcc2c52d9a399c77a01b5f9b" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Weather App</title>
+  </head>
+  <body>
+    <h1>Weather App</h1>
+
+    <a href="#!/Home">Home</a>
+    <a href="#!/input">Search for Weather</a>
+    <a href="#!/output">View Results</a>
+
+    <ng-view></ng-view>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.6.4/angular-route.js"></script>
+    <script src="module.js"></script>
+    <script src="config.js"></script>
+    <script src="input-controller.js"></script>
+    <script src="output-controller.js"></script>
+    <script src="service.js"></script>
+  </body>
+</html>
