@@ -1,2 +1,18 @@
-
-<div ng-repeat="data in Finaldata" </div>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <p>City: {{ finalData.location.city }}</p>
+      <p>State: {{ finalData.location.region }}</p>
+      <p>Country: {{ finalData.location.country }}</p>
+      <p>Sunrise: {{ finalData.astronomy.sunrise }} </p>
+      <p>Sunset: {{ finalData.astronomy.sunset }}</p>
+      <p>Humidity: {{ finalData.atmosphere.humidity }}</p>
+      <p>Forcast:</p>
+        <p>Date: {{ finalData.item.forecast[0].date}}</p>
+        <p>Day: {{ finalData.item.forecast[0].day}}</p>
+        <p>High Of: {{ finalData.item.forecast[0].high}}</p>
+        <p>Low Of: {{ finalData.item.forecast[0].low}}</p>
+        <p>{{ finalData.item.forecast[0].text}}</p>
+    </div>
+  </div>
+</div>
